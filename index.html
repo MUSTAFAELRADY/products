@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>program</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>cruds</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum,
+          aliquid!
+        </p>
+      </div>
+      <div class="inputs">
+        <input type="text" id="title" />
+        <div class="numbers">
+          <input onkeyup="getTotal()" type="number" id="price" placeholder="price" />
+          <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes" />
+          <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads" />
+          <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount" />
+          <small id="total" placeholder="total">total</small>
+        </div>
+        
+        <input type="text" id="count" placeholder="count" />
+        <input type="text" id="category" placeholder="category" />
+        <button id="create">create</button>
+      </div>
+
+      <div class="outputs">
+        <input onkeyup="searchData(this.value)" type="text" id="search" />
+        <div class="searchby">
+          <span onclick="getsearch(this.id)" id="stitle">search by title</span>
+          <span onclick="getsearch(this.id)" id="scategory">search by category</span>
+        </div>
+      </div>
+      <div id="deleteAll"></div>
+      <table>
+        <tr>
+          <th>id</th>
+          <th>title</th>
+          <th>taxes</th>
+          <th>ads</th>
+          <th>discount</th>
+          <th>total</th>
+          <th>count</th>
+          <th>category</th>
+          <th>update</th>
+          <th>delete</th>
+        </tr>
+        <tbody id="tbody">
+
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

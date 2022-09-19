@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.header{
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+.header h1{
+font-size: 60px;
+
+}
+.inputs{
+    width: 100%;
+    justify-content: space-between;
+}
+input{
+    padding: 8px;
+    margin: 4px 0;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #111;
+    color: aliceblue;
+}
+button{
+    padding: 8px;
+    margin: 4px 0;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #111;
+    color: white;
+    outline: none;
+    border: none;
+    
+
+}
+input:focus{
+    transform: scale(1.15);
+    outline: none;
+    border: none;
+
+}
+.inputs #title{
+    width: 100%;
+}
+.inputs .numbers{
+    width: 100%;
+}
+.numbers input{
+    width: 18%;
+}
+#count{
+    width: 100%;
+}
+#category{
+    width: 100%;
+}
+#create{
+    width: 100%;
+    background-color: blue;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+small{
+    background: red;
+    text-align: center;
+    border-radius: 20px;
+    padding: 8px;
+
+}
+.outputs{
+    width: 100%;
+}
+.outputs #search{
+    width: 100%;
+    display: block;
+}
+.outputs .title{
+    width: 43%;
+    background-color: #111;
+    /* float: left; */
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 20px;
+    margin: 5px 0;
+    text-align: center;
+}
+.outputs .category{
+    width: 43%;
+    background-color: #111;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 20px;
+    margin: 5px 0;
+    text-align: center;
+
+}
+.searchby{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#deleteAll button{
+    width: 100%;
+    padding: 8px;
+    margin: 20px 0;
+    background-color: blue;
+    cursor: pointer;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+th,td{
+    padding:8px ;
+}
+span{
+    background-color: blue;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+@media (max-width:700px){
+    table{
+        max-width: 85%;
+        margin: auto;
+        overflow: hidden;
+    }
+    th,td{
+        padding: 8px 4px;
+    }
+    .container{
+        /* margin: auto; */
+        width: 90%;
+    }
+}
